@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<c2addon>
+	<!-- One of: plugin, behavior, effect -->
+	<type>plugin</type>
+	
+	<name>C2SuperFunctions</name>	
+	<version>1.0</version>
+	<author>Psychokiller1888</author>
+	<website>http://www.sickrabbitstudios.com</website>
+	<documentation>https://github.com/Psychokiller1888/c2superfunctions</documentation>
+	<description>A collection of missing functions for Construct 2</description>
+</c2addon>
