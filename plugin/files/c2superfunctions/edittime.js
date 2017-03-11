@@ -3,7 +3,7 @@
 	return {
 		"name":			"C2SuperFunctions",		// as appears in 'insert object' dialog, can be changed as long as "id" stays the same
 		"id":			"C2SuperFunctions",		// this is used to identify this plugin and is saved to the project; never change it
-		"version":		"1.0",					// (float in x.y format) Plugin version - C2 shows compatibility warnings based on this
+		"version":		"1.1",					// (float in x.y format) Plugin version - C2 shows compatibility warnings based on this
 		"description":	"A collection of missing function for Construct 2",
 		"author":		"Psychokiller1888",
 		"help url":		"www.sickrabbitstudios.com",
@@ -55,8 +55,8 @@
 //				script_name);		// corresponding runtime function name
 				
 // example				
-AddNumberParam("Number", "Enter a number to test if positive.");
-AddCondition(0, cf_none, "Is number positive", "My category", "{0} is positive", "Description for my condition!", "MyCondition");
+//AddNumberParam("Number", "Enter a number to test if positive.");
+//AddCondition(0, cf_none, "Is number positive", "My category", "{0} is positive", "Description for my condition!", "MyCondition");
 
 ////////////////////////////////////////
 // Actions
@@ -89,6 +89,9 @@ AddCondition(0, cf_none, "Is number positive", "My category", "{0} is positive",
 AddStringParam("String", "String to split");
 AddStringParam("Delimiter", "Split delimiter");
 AddExpression(0, ef_return_string, "String", "String", "Split", "Return a JSON string to load an array with the split() result");
+
+AddStringParam("String", "String to compress");
+AddExpression(0, ef_return_string, "String", "String", "Sha1", "Returns the sha1 result of thegiven string");
 
 ////////////////////////////////////////
 ACESDone();
